@@ -17,4 +17,3 @@ class GpannounItem(scrapy.Item):
     PUBLISH_DATE = scrapy.Field()
     ARTICLE = scrapy.Field()
     ANNOUN_URL = scrapy.Field()
-	ANNOUN_URLANNOUN_URL
