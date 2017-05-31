@@ -15,7 +15,8 @@ SPIDER_MODULES = ['GPAnnoun.spiders']
 NEWSPIDER_MODULE = 'GPAnnoun.spiders'
 
 #database connection parameters host='127.0.0.1', port=3306, user='root', password='', db='douyucrawler', charset='utf8'
-##DBKWARGS={'host':'localhost','user':'root','password':'','db':'douyucrawler','charset':'utf8','use_unicode':True}
+
+DBKWARGS={'host':'127.0.0.1','port':3306,'user':'root','password':'','db':'douyucrawler','charset':'utf8'}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'Mozilla/5.0 (Window NT 6.1; rv:40.0)'
