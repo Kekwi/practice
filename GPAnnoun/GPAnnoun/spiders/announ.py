@@ -5,11 +5,11 @@ import re
 class AnnounSpider(scrapy.Spider):
     name = 'announ'
     count = 0
-    start_urls = ['http://www.ccgp-shandong.gov.cn/sdgp2014/site/listall.jsp?colcode=0304&curpage=8352','http://www.ccgp-shandong.gov.cn/sdgp2014/site/listall.jsp?colcode=0304&curpage=8353']
+    start_urls = ['http://www.ccgp-shandong.gov.cn/sdgp2014/site/channelall.jsp?colcode=0304&curpage=1']
     
     #获取起始页面请求链接
     def start_requests(self):
-        dept = 40
+        dept = 20
         reqs = []
         for i in range(dept):
             req = scrapy.Request("http://www.ccgp-shandong.gov.cn/sdgp2014/site/channelall.jsp?colcode=0304&curpage=%s"%(i+1))
