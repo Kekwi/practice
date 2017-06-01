@@ -9,7 +9,7 @@ class AnnounSpider(scrapy.Spider):
     
     #获取起始页面请求链接
     def start_requests(self):
-        dept = 20
+        dept = 1000
         reqs = []
         for i in range(dept):
             req = scrapy.Request("http://www.ccgp-shandong.gov.cn/sdgp2014/site/channelall.jsp?colcode=0304&curpage=%s"%(i+1))
