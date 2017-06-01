@@ -28,6 +28,7 @@ ITEM_PIPELINES = {
 }
 
 LOG_FILE = "scrapy.log"
+LOG_LEVEL = "INFO"
 # Obey robots.txt rules
 # ROBOTSTXT_OBEY = True
 
